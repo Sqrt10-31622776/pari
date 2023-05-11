@@ -1,0 +1,55 @@
+.small {
+    font-size: x-small;
+}
+
+body,
+input {
+    background-color: #d1d1d1;
+    font-family: "M PLUS Rounded 1c", "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3,
+        Verdana, Helvetica, Arial, 游ゴシック, "Yu Gothic", メイリオ, Meiryo,
+        sans-serif;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 10px;
+}
+
+input{
+    text-align: center;
+    width: 60%;
+}
+
+table tr td:nth-of-type(1) {
+    text-align: center; 
+}
+
+table tr td:nth-of-type(2) {
+    text-align: center; 
+}
+
+table tr td:nth-of-type(3) {
+    text-align: center; 
+}
+
+table tr td:nth-of-type(4) {
+    text-align: right; 
+}
+
+thead {
+    text-align: center !important;
+}
+
+#estimated_value{
+    text-align: center;
+}
+
+table tr:nth-child(5){
+    background-color: #999;
+}
+
+table{
+    width:100%;
+}
+
