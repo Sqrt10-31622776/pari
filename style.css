@@ -16,40 +16,41 @@ h1 {
     margin: 10px;
 }
 
-input{
+input {
     text-align: center;
     width: 60%;
+    height: 100%;
 }
 
 table tr td:nth-of-type(1) {
-    text-align: center; 
+    text-align: center;
 }
 
 table tr td:nth-of-type(2) {
-    text-align: center; 
+    text-align: center;
 }
 
 table tr td:nth-of-type(3) {
-    text-align: center; 
+    text-align: center;
 }
 
 table tr td:nth-of-type(4) {
-    text-align: right; 
+    text-align: right;
 }
 
 thead {
     text-align: center !important;
 }
 
-#estimated_value{
+#estimated_value {
     text-align: center;
 }
 
-table tr:nth-child(5){
+table tr:nth-child(5) {
     background-color: #999;
 }
 
-table{
-    width:100%;
+table {
+    width: 100%;
+    height: 80vh;
 }
-
