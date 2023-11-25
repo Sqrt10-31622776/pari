@@ -2,10 +2,12 @@ const submitButton_0 = document.getElementById('button_0');
 const submitButton_1 = document.getElementById('button_1');
 const submitButton_2 = document.getElementById('button_2');
 const submitButton_3 = document.getElementById('button_3');
+const submitButton_4 = document.getElementById('button_4');
 const submitButton_10 = document.getElementById('button_10');
 const submitButton_11 = document.getElementById('button_11');
 const submitButton_12 = document.getElementById('button_12');
 const submitButton_13 = document.getElementById('button_13');
+const submitButton_14 = document.getElementById('button_14');
 var json_saved;
 var sellvalue = [];
 
@@ -123,6 +125,27 @@ submitButton_3.onclick = () => {
       });
 };
 
+submitButton_4.onclick = () => {
+  url.searchParams.set('type', 'record');
+  url.searchParams.set('item', '4');
+  url.searchParams.set('value', document.getElementById('cost_4').value);
+
+  submitButton_4.disabled = 'disabled';
+  submitButton_4.value = '送信中';
+  fetch(url, {
+    method: 'GET',
+  })
+      .then(response => response.json())
+      .then(json => {
+        reflesh(json);
+        submitButton_4.disabled = null;
+        submitButton_4.value = '売上';
+      })
+      .catch(function(err) {
+        alert(err);
+      });
+};
+
 submitButton_10.onclick = () => {
   url.searchParams.set('type', 'delete');
   url.searchParams.set('item', '0');
@@ -203,12 +226,32 @@ submitButton_13.onclick = () => {
       });
 };
 
+submitButton_14.onclick = () => {
+  url.searchParams.set('type', 'delete');
+  url.searchParams.set('item', '4');
+  if (json_saved[4]['num'] == 0) return;
+  submitButton_14.disabled = 'disabled';
+  submitButton_14.value = '送信中';
+  fetch(url, {
+    method: 'GET',
+  })
+      .then(response => response.json())
+      .then(json => {
+        reflesh(json);
+        submitButton_14.disabled = null;
+        submitButton_14.value = '取消';
+      })
+      .catch(function(err) {
+        alert(err);
+      });
+};
+
 function reflesh(json) {
   json_saved = json;
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     sellvalue[i] = document.getElementById('cost_' + i).value;
   }
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     document.getElementById('name_' + i.toString()).innerHTML = json[i]['name'];
     document.getElementById('num_' + i.toString()).innerHTML = json[i]['num'] +
         '<span class = "small"> /' + json[i]['objective'] + '</span>';
@@ -216,7 +259,7 @@ function reflesh(json) {
         `${json[i]['sell'].toLocaleString()}`;
   }
   var num_s = 0, value_s = 0, objective_s = 0, estimated = 0;
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     objective_s += Number(json[i]['objective']);
     num_s += Number(json[i]['num']);
     value_s += Number(json[i]['sell']);
