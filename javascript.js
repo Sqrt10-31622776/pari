@@ -40,6 +40,9 @@ document.getElementById('cost_2').onchange = function() {
 document.getElementById('cost_3').onchange = function() {
   reflesh(json_saved);
 };
+document.getElementById('cost_4').onchange = function() {
+  reflesh(json_saved);
+};
 
 submitButton_0.onclick = () => {
   url.searchParams.set('type', 'record');
