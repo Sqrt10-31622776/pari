@@ -52,11 +52,7 @@ thead {
     text-align: center;
 }
 
-table tr:nth-child(6) {
-    background-color: #999;
-}
-
 table {
-    width: 100%;
+    width: 100vh;
     height: 80vh;
 }
