@@ -1,132 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link
-            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Montserrat:ital,wght@0,400;1,400&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="shortcut icon" href="favicon.png" type="image/png" />
-        <title>パリトッツォ</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta charset="utf-8" />
-    </head>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link
+			href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Montserrat:ital,wght@0,400;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="favicon.png" type="image/png" />
+		<title>パリトッツォ</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta charset="utf-8" />
+	</head>
 
-    <body>
-        <!--<h1>パリトッツォ 売上</h1>-->
-        <table width="80%">
-            <thead>
-                <td width="18%">名称</td>
-                <td width="20%">値段</td>
-                <td width="12%">売上数</td>
-                <td width="15%">売上額</td>
-                <td width="12%"></td>
-                <td width="12%"></td>
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td id="name_0">ノーマル</td>
-                    <td>¥
-                        <input
-                            id="cost_0"
-                            type="number"
-                            value="400"
-                            min="0"
-                            max="1000"
-                            step="50"
-                        />
-                    </td>
-                    <td id="num_0"></td>
-                    <td id="value_0"></td>
-                    <td><input id="button_0" type="button" value="売上" /></td>
-                    <td><input id="button_10" type="button" value="取消" /></td>
-                </tr>
-                <tr>
-                    <td id="name_1">パリ</td>
-                    <td>¥
-                        <input
-                            id="cost_1"
-                            type="number"
-                            value="450"
-                            min="0"
-                            max="1000"
-                            step="50"
-                        />
-                    </td>
-                    <td id="num_1"></td>
-                    <td id="value_1"></td>
-                    <td><input id="button_1" type="button" value="売上" /></td>
-                    <td><input id="button_11" type="button" value="取消" /></td>
-                </tr>
-                <tr>
-                    <td id="name_2">マジ</td>
-                    <td>¥
-                        <input
-                            id="cost_2"
-                            type="number"
-                            value="450"
-                            min="0"
-                            max="1000"
-                            step="50"
-                        />
-                    </td>
-                    <td id="num_2"></td>
-                    <td id="value_2"></td>
-                    <td><input id="button_2" type="button" value="売上" /></td>
-                    <td><input id="button_12" type="button" value="取消" /></td>
-                </tr>
-                <tr>
-                    <td id="name_3">チョコ</td>
-                    <td>¥
-                        <input
-                            id="cost_3"
-                            type="number"
-                            value="450"
-                            min="0"
-                            max="1000"
-                            step="50"
-                        />
-                    </td>
-                    <td id="num_3"></td>
-                    <td id="value_3"></td>
-                    <td><input id="button_3" type="button" value="売上" /></td>
-                    <td><input id="button_13" type="button" value="取消" /></td>
-                </tr>
+	<body>
+		<!--<h1>パリトッツォ 売上</h1>-->
+		<table width="80%">
+			<thead>
+				<td width="18%">名称</td>
+				<td width="20%">値段</td>
+				<td width="12%">売上数</td>
+				<td width="15%">売上額</td>
+				<td width="12%"></td>
+				<td width="12%"></td>
+			</thead>
+			<tbody>
 				<tr>
-                    <td id="name_4">デス</td>
-                    <td>¥
-                        <input
-                            id="cost_4"
-                            type="number"
-                            value="300"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td id="num_4"></td>
-                    <td id="value_4"></td>
-                    <td><input id="button_4" type="button" value="売上" /></td>
-                    <td><input id="button_14" type="button" value="取消" /></td>
-                </tr>
-                <tr>
-                    <td>合計</td>
-                    <td></td>
-                    <td id="num_s"></td>
-                    <td id="value_s"></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+					<td id="name_0">ノーマル</td>
+					<td>
+						¥
+						<input
+							id="cost_0"
+							type="number"
+							value="400"
+							min="0"
+							max="1000"
+							step="50"
+						/>
+					</td>
+					<td id="num_0"></td>
+					<td id="value_0"></td>
+					<td><input id="button_0" type="button" value="売上" /></td>
+					<td><input id="button_10" type="button" value="取消" /></td>
+				</tr>
+				<tr>
+					<td id="name_1">パリ</td>
+					<td>
+						¥
+						<input
+							id="cost_1"
+							type="number"
+							value="450"
+							min="0"
+							max="1000"
+							step="50"
+						/>
+					</td>
+					<td id="num_1"></td>
+					<td id="value_1"></td>
+					<td><input id="button_1" type="button" value="売上" /></td>
+					<td><input id="button_11" type="button" value="取消" /></td>
+				</tr>
+				<tr>
+					<td id="name_2">マジ</td>
+					<td>
+						¥
+						<input
+							id="cost_2"
+							type="number"
+							value="450"
+							min="0"
+							max="1000"
+							step="50"
+						/>
+					</td>
+					<td id="num_2"></td>
+					<td id="value_2"></td>
+					<td><input id="button_2" type="button" value="売上" /></td>
+					<td><input id="button_12" type="button" value="取消" /></td>
+				</tr>
+				<tr>
+					<td id="name_3">チョコ</td>
+					<td>
+						¥
+						<input
+							id="cost_3"
+							type="number"
+							value="450"
+							min="0"
+							max="1000"
+							step="50"
+						/>
+					</td>
+					<td id="num_3"></td>
+					<td id="value_3"></td>
+					<td><input id="button_3" type="button" value="売上" /></td>
+					<td><input id="button_13" type="button" value="取消" /></td>
+				</tr>
+				<tr>
+					<td id="name_4">デス</td>
+					<td>
+						¥
+						<input
+							id="cost_4"
+							type="number"
+							value="300"
+							min="0"
+							max="500"
+							step="50"
+						/>
+					</td>
+					<td id="num_4"></td>
+					<td id="value_4"></td>
+					<td><input id="button_4" type="button" value="売上" /></td>
+					<td><input id="button_14" type="button" value="取消" /></td>
+				</tr>
+				<tr>
+					<td>合計</td>
+					<td></td>
+					<td id="num_s"></td>
+					<td id="value_s"></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
 
-        <script type="text/javascript" src="javascript.js"></script>
-    </body>
+		<script type="text/javascript" src="javascript.js"></script>
+	</body>
 </html>
