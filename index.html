@@ -20,131 +20,109 @@
 
     <body>
         <!--<h1>パリトッツォ 売上</h1>-->
-        <table width="100%">
+        <table width="80%">
             <thead>
                 <td width="18%">名称</td>
                 <td width="20%">値段</td>
+                <td width="12%">売上数</td>
+                <td width="15%">売上額</td>
                 <td width="12%"></td>
                 <td width="12%"></td>
+
             </thead>
             <tbody>
                 <tr>
-                    <td>塩</td>
-                    <td>
-                        ¥
+                    <td id="name_0">ノーマル</td>
+                    <td>¥
                         <input
                             id="cost_0"
                             type="number"
-                            value="300"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td><input id="button_0" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td>チリ</td>
-                    <td>
-                        ¥
-                        <input
-                            id="cost_1"
-                            type="number"
-                            value="300"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td><input id="button_1" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td>バジル</td>
-                    <td>
-                        ¥
-                        <input
-                            id="cost_2"
-                            type="number"
-                            value="300"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td><input id="button_2" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td>カレー</td>
-                    <td>
-                        ¥
-                        <input
-                            id="cost_3"
-                            type="number"
-                            value="300"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td><input id="button_3" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td>チョコ</td>
-                    <td>
-                        ¥
-                        <input
-                            id="cost_4"
-                            type="number"
-                            value="350"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td><input id="button_4" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td>バ醤油</td>
-                    <td>
-                        ¥
-                        <input
-                            id="cost_5"
-                            type="number"
-                            value="350"
-                            min="0"
-                            max="500"
-                            step="50"
-                        />
-                    </td>
-                    <td><input id="button_5" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td>メガ</td>
-                    <td>
-                        ¥
-                        <input
-                            id="cost_6"
-                            type="number"
-                            value="800"
+                            value="400"
                             min="0"
                             max="1000"
                             step="50"
                         />
                     </td>
-                    <td><input id="button_6" type="button" value="売上" /></td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <label><input id="sio" type="checkbox" />塩</label>
-                        <label><input id="tiri" type="checkbox" />チリ</label>
-                        <label><input id="baji" type="checkbox" />バジル</label>
-                        <label><input id="kare" type="checkbox" />カレー</label>
-                        <label><input id="choko" type="checkbox" />チョコ</label>
-                        <label><input id="basho" type="checkbox" />バ醤油</label>
-                    </td>
-                </tr>
-                <tr>
+                    <td id="num_0"></td>
+                    <td id="value_0"></td>
+                    <td><input id="button_0" type="button" value="売上" /></td>
                     <td><input id="button_10" type="button" value="取消" /></td>
+                </tr>
+                <tr>
+                    <td id="name_1">パリ</td>
+                    <td>¥
+                        <input
+                            id="cost_1"
+                            type="number"
+                            value="450"
+                            min="0"
+                            max="1000"
+                            step="50"
+                        />
+                    </td>
+                    <td id="num_1"></td>
+                    <td id="value_1"></td>
+                    <td><input id="button_1" type="button" value="売上" /></td>
+                    <td><input id="button_11" type="button" value="取消" /></td>
+                </tr>
+                <tr>
+                    <td id="name_2">マジ</td>
+                    <td>¥
+                        <input
+                            id="cost_2"
+                            type="number"
+                            value="450"
+                            min="0"
+                            max="1000"
+                            step="50"
+                        />
+                    </td>
+                    <td id="num_2"></td>
+                    <td id="value_2"></td>
+                    <td><input id="button_2" type="button" value="売上" /></td>
+                    <td><input id="button_12" type="button" value="取消" /></td>
+                </tr>
+                <tr>
+                    <td id="name_3">チョコ</td>
+                    <td>¥
+                        <input
+                            id="cost_3"
+                            type="number"
+                            value="450"
+                            min="0"
+                            max="1000"
+                            step="50"
+                        />
+                    </td>
+                    <td id="num_3"></td>
+                    <td id="value_3"></td>
+                    <td><input id="button_3" type="button" value="売上" /></td>
+                    <td><input id="button_13" type="button" value="取消" /></td>
+                </tr>
+				<tr>
+                    <td id="name_4">デス</td>
+                    <td>¥
+                        <input
+                            id="cost_4"
+                            type="number"
+                            value="300"
+                            min="0"
+                            max="500"
+                            step="50"
+                        />
+                    </td>
+                    <td id="num_4"></td>
+                    <td id="value_4"></td>
+                    <td><input id="button_4" type="button" value="売上" /></td>
+                    <td><input id="button_14" type="button" value="取消" /></td>
+                </tr>
+                <tr>
+                    <td>合計</td>
+                    <td></td>
+                    <td id="num_s"></td>
+                    <td id="value_s"></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
