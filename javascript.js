@@ -266,7 +266,7 @@ function reflesh(json) {
 	document.getElementById('num_s').innerHTML = num_s;
 	document.getElementById('value_s').innerHTML = '¥' +
 		`${value_s.toLocaleString()}`;
-	document.getElementById('cream').innerText = (num_s / 270 * 40).toFixed(1) + " 本";
+	document.getElementById('cream').innerText = (num_s / 320 * 40).toFixed(1) + " 本";
 }
 
 
